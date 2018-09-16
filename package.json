@@ -1,0 +1,24 @@
+{
+  "name": "liquid",
+  "version": "0.0.1",
+  "description": "Mercurial repo management dashboard",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^2.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kylir/Liquid.git"
+  },
+  "author": "Jason Forest",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kylir/Liquid/issues"
+  },
+  "homepage": "https://github.com/Kylir/Liquid#readme"
+}

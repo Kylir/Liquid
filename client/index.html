@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="renderer" content="webkit">
+
+    <title>Liquid - Your Repositories</title>
+
+    <meta name="keywords" content="mercurial Repositories">
+    <meta name="description" content="A simple dashboard to see the state of your Mercural repositories">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- production version, optimized for size and speed -->
+    <script src="https://vuejs.org/js/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <p>This is my app.</p>
+        <p><button v-on:click="toggleRefreshInterval">Refresh: {{ isRefreshing }}</button></p>
+        <ul>
+            <li v-for="repo in repositories">
+                {{ repo.name }} : {{repo.uncomited.length}} {{ repo.incomings.length }} {{ repo.outgoings.length }}
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
